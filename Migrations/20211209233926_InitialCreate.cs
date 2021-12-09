@@ -13,10 +13,9 @@ namespace FinalProject.Migrations
                     CatID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Name = table.Column<string>(maxLength: 60, nullable: false),
-                    Age = table.Column<int>(nullable: false),
+                    Age = table.Column<string>(nullable: true),
                     Breed = table.Column<string>(maxLength: 30, nullable: false),
                     Color = table.Column<string>(nullable: true),
-                    Weight = table.Column<int>(maxLength: 5, nullable: false),
                     Gender = table.Column<string>(maxLength: 5, nullable: false)
                 },
                 constraints: table =>
@@ -30,8 +29,10 @@ namespace FinalProject.Migrations
                 {
                     ApplicationID = table.Column<int>(nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    FirstName = table.Column<string>(nullable: false),
-                    LastName = table.Column<string>(nullable: false),
+                    FirstName = table.Column<string>(maxLength: 30, nullable: false),
+                    LastName = table.Column<string>(maxLength: 30, nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    PhoneNumber = table.Column<string>(nullable: false),
                     CatId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

@@ -9,11 +9,12 @@ namespace FinalProject.Models
         // Primary Key for Application entity class
         public int ApplicationID {get; set;}
 
+        [Display(Name = "First Name")]
         [StringLength(30)]
         [Required]
         public string FirstName {get; set;}
 
-
+        [Display(Name = "Last Name")]
         [StringLength(30)]
         [Required]
         public string LastName {get; set;}

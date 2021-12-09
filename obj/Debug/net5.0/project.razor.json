@@ -15634,6 +15634,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\Cats\\Index.cshtml",
+      "TargetPath": "Pages\\Cats\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
@@ -15651,6 +15656,21 @@
     {
       "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\Error.cshtml",
       "TargetPath": "Pages\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\SubmitApplication.cshtml",
+      "TargetPath": "Pages\\SubmitApplication.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\Create.cshtml",
+      "TargetPath": "Pages\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\CIDM3312\\FinalProject\\Pages\\Details.cshtml",
+      "TargetPath": "Pages\\Details.cshtml",
       "FileKind": "mvc"
     }
   ],

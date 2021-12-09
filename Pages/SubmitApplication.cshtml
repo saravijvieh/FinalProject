@@ -1,0 +1,55 @@
+@page
+@model SumbitApplicationModel
+
+@{
+    ViewData["Title"] = "Submit Application";
+}
+
+<h1>Application to Adopt a Cat</h1>
+
+<h4>Please Fill Out This Form</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Application.CatId" class="control-label"></label>
+                <select asp-for="Application.CatId" asp-items="Model.CatsDropDown" class="form-control">
+                    <option value="">--Select Cat--</option> 
+                </select>
+                <span asp-validation-for="Application.CatId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application.FirstName" class="control-label"></label>
+                <input asp-for="Application.FirstName" class="form-control" />
+                <span asp-validation-for="Application.FirstName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application.LastName" class="control-label"></label>
+                <input asp-for="Application.LastName" class="form-control" />
+                <span asp-validation-for="Application.LastName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application.Email" class="control-label"></label>
+                <input asp-for="Application.Email" class="form-control" />
+                <span asp-validation-for="Application.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Application.PhoneNumber" class="control-label"></label>
+                <input asp-for="Application.PhoneNumber" class="form-control" />
+                <span asp-validation-for="Application.PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit Application" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

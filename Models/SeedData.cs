@@ -33,7 +33,7 @@ namespace FinalProject.Models
                     new Cat
                     {
                         Name = "Willow",
-                        Age = "1",
+                        Age = "1 Year",
                         Breed = "Domestic Short Hair",
                         Color = "Tabby (Gray/Blue/Silver",
                         Gender = "Female",
@@ -57,7 +57,7 @@ namespace FinalProject.Models
                     new Cat
                     {
                         Name = "Basil",
-                        Age = "1.5 years",
+                        Age = "1.5 Years",
                         Breed = "Tabby/Tiger Mix",
                         Color = "Orange/White ",
                         Gender = "Male",

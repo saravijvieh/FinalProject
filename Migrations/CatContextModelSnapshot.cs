@@ -24,11 +24,21 @@ namespace FinalProject.Migrations
                     b.Property<int>("CatId")
                         .HasColumnType("INTEGER");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(30);
+
                     b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("TEXT")
+                        .HasMaxLength(30);
+
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
@@ -45,8 +55,8 @@ namespace FinalProject.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int>("Age")
-                        .HasColumnType("INTEGER");
+                    b.Property<string>("Age")
+                        .HasColumnType("TEXT");
 
                     b.Property<string>("Breed")
                         .IsRequired()
@@ -65,10 +75,6 @@ namespace FinalProject.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT")
                         .HasMaxLength(60);
-
-                    b.Property<int>("Weight")
-                        .HasColumnType("INTEGER")
-                        .HasMaxLength(5);
 
                     b.HasKey("CatID");
 

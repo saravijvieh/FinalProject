@@ -65,3 +65,7 @@ C:\CIDM3312\FinalProject\obj\Debug\net5.0\FinalProject.dll
 C:\CIDM3312\FinalProject\obj\Debug\net5.0\ref\FinalProject.dll
 C:\CIDM3312\FinalProject\obj\Debug\net5.0\FinalProject.pdb
 C:\CIDM3312\FinalProject\obj\Debug\net5.0\FinalProject.genruntimeconfig.cache
+C:\CIDM3312\FinalProject\obj\Debug\net5.0\Razor\Pages\Cats\Index.cshtml.g.cs
+C:\CIDM3312\FinalProject\obj\Debug\net5.0\Razor\Pages\Create.cshtml.g.cs
+C:\CIDM3312\FinalProject\obj\Debug\net5.0\Razor\Pages\SubmitApplication.cshtml.g.cs
+C:\CIDM3312\FinalProject\obj\Debug\net5.0\Razor\Pages\Details.cshtml.g.cs
