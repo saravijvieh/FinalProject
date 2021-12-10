@@ -11,6 +11,12 @@
     <a asp-page="Create">Place a Cat for Adoption</a><span> | </span>
     <a asp-page="SubmitApplication">Apply to Adopt a Cat</a>
 </p>
+<form>
+	<select asp-for="CurrentSort" asp-items="Model.SortList">
+		<option value="">sort by...</option>
+	</select>
+	<button type="submit">Sort</button>
+</form>
 <table class="table">
     <thead>
         <tr>
@@ -57,4 +63,18 @@
 }
     </tbody>
 </table>
+<hr />
+@{
+    var prevDisabled = "";
+    if (Model.PageNum <= 1)
+    {
+        prevDisabled = "disabled";
+    }
+}
+<nav aria-label="Page navigation">
+  <ul class="pagination">
+    <li class="page-item @prevDisabled"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum - 1)">Previous</a></li>
+    <li class="page-item"><a class="page-link" asp-page="./Index" asp-route-PageNum="@(Model.PageNum + 1)">Next</a></li>
+  </ul>
+</nav>
 

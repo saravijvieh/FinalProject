@@ -45,12 +45,11 @@ namespace FinalProject.Pages
                 return Page();
             }
 
-            // Find the review in the database
             Application application = _context.Application.FirstOrDefault(r => r.ApplicationID == ApplicationIDToDelete);
             
             if (application != null)
             {
-                _context.Remove(application); // Delete the Application
+                _context.Remove(application); 
                 _context.SaveChanges();
             }
 

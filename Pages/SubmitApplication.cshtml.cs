@@ -14,14 +14,13 @@ namespace FinalProject.Pages
     public class SumbitApplicationModel : PageModel
     {
         private readonly ILogger<SumbitApplicationModel> _logger;
-        private readonly CatContext _context; // Movie Database context
+        private readonly CatContext _context;
         [BindProperty]
         public Application Application {get; set;}
         public SelectList CatsDropDown {get; set;}
 
         public SumbitApplicationModel(CatContext context, ILogger<SumbitApplicationModel> logger)
         {
-            // Bring in Database context and logger using dependency injection
             _context = context;
             _logger = logger;
         }

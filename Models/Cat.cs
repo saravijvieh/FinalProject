@@ -15,13 +15,13 @@ namespace FinalProject.Models
 
         public string Age {get; set;}
 
-        [StringLength(30)]
+        [StringLength(50)]
         [Required]
         public string Breed {get; set;}
 
         public string Color {get; set;}
 
-        [StringLength(5)]
+        [StringLength(10)]
         [Required]
         public string Gender {get; set;}
 
